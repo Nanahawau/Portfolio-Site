@@ -1,0 +1,62 @@
+@mixin landing-page-theme($theme) {
+    $primary: map-get($theme, primary);
+    $warn: map-get($theme, warn);
+  
+    .landing-header {
+      background: mat-color($primary, darker);
+      color: mat-color($primary, default-contrast);
+    }
+  }
+
+  .touch:hover{
+      cursor: pointer;
+      }
+
+
+     ul { 
+      margin: 0;
+      padding: 0;
+      font-size: large;
+      letter-spacing: 1px;
+
+      li {
+        list-style: none;
+      
+     }
+     }
+
+
+     .text-main {
+      display: block;
+      font-size: 40px;
+      font-weight: 400;
+      letter-spacing: 5px;
+      animation-name: moveInLeft;
+      animation-duration: 3s;
+      animation-timing-function: ease-out ;
+      /* animation-delay: 2s; */
+    }
+
+     /*
+Browsers are optimized for animation using 2 css properties
+Opacity and Transform.
+*/
+@keyframes moveInLeft {
+  0% {
+  opacity: 0;
+  transform: translateX(-100px);
+
+  }
+  80% {
+      transform: translateX(10px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+.list-items {
+  letter-spacing: 2px;
+}

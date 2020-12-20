@@ -1,0 +1,73 @@
+ <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <a class="navbar-brand" href="#">Nana-Hawau</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto w-100 justify-content-end">
+        <li class="nav-item my-1">
+          <span class="material-icons touch" (click)="changeTheme('light-theme')" [ngStyle]="{'display': dark? 'block' : 'none'}">
+            touch_app
+          </span>            
+          <span class="material-icons touch" (click)="changeTheme('dark-theme')" [ngStyle]="{'display': !dark? 'block' : 'none'}">
+            touch_app
+          </span>  
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Projects<span class="sr-only">(current)</span></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="https://dev.to/nanahawau">Musings</a>
+        </li>
+     <li c2lass="nav-item">
+          <a class="nav-link" href="https://github.com/nanahawau">Github</a>
+        </li>
+      </ul>
+    </div>
+    <button mat-button [matMenuTriggerFor]="menu" class="btn btn-outline-dark">Contact Me</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Email</button>
+      <button mat-menu-item>LinkedIn</button>
+    </mat-menu>
+  </nav>
+
+
+<!-- <div class="landing-body row">
+<div class="col-6 align-items-center h-100 name-header">
+<p class="display-2">Nana Hawau Adeku</p>
+<ul class="">
+  <li>
+    Fullstack Developer @ Ecobank eProcess Nigeria
+  </li>
+  <li>
+    Trying to make magic with Angular and Springboot
+  </li>
+  <li>Open to collaborations, <a href="">send me a mail</a></li>
+</ul>
+</div>
+<div class="col-6">
+ <img src="/src/assets/svgs/webdesign-3411373.jpg">
+</div>
+</div> -->
+
+<div class="h-75 d-flex align-items-center col-3-md col-6 col-1-sm text-main">
+  <div class="container ">
+    <p class="display-3 body-primary">Hello, I'm Nana-hawau</p>
+    <ul class="my-4 list-items">
+      <li class="my-4">
+        Fullstack Developer @ Ecobank eProcess Nigeria
+      </li>
+      <li class="my-4">
+        Trying to make magic with Angular and Springboot
+      </li>
+      <li class="my-4">Open to collaborations, <a href="">send me a mail</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
